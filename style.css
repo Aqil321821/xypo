@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* utility class */
+.btn{
+    padding: 12px 30px;
+    background: transparent;
+    /* outline: navy; */
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+#header{
+    height: 100vh;
+    background: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+#header .container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#header .container .logo{
+    width: 100px;
+    margin-top: 30px;
+}
+#header .header-text{
+    max-width: 350px;
+    margin-top: 110px;
+}
+#header .header-text h1{
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 35px;
+}
+#header .header-text .square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+#header .header-text p{
+    font-size: 19px;
+    line-height: 25px;
+    color: #777;
+    word-spacing: 5px;
+
+}
+#header .header-text .btn{
+    margin: 20px 0 50px 0;
+}
+
+.lines .line1{
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+}
+.lines .line2{
+    width: 80px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.lines .line3{
+    width: 60px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+/* styling sidebar navigation */
+
+#side-nav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background: #f67c92;
+    transition: 1s;
+}
+#menu-pic{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+#side-nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+
+}
+#side-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+  
+}
+#side-nav ul li a:hover{
+    border-bottom: #d67086 solid 3px;
+}
+.current{
+    border-bottom: #d67086 solid 3px;
+}
+
+/* styling about section */
+
+#about{
+    /* border: 1px solid red; */
+    padding: 150px 0px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#about .left{
+    flex-basis: 50%;
+}
+#about .left img{
+    width: 100%;
+    z-index: -111;
+    
+}
+#about .right{
+  flex-basis: 50%;
+}
+#about .lines{
+    text-align: end;
+    margin-right: 25px;
+}
+#about .right .about-text p{
+    line-height: 25px;
+    font-size: 19px;
+    line-height: 30px;
+    color: #777;
+    word-spacing: 5px;
+    margin-top: 10px;
+
+}
+#about h3{
+    margin-top: 8px;
+    text-align: right;
+    margin-right: 25px;
+    /* font-weight: 300; */
+}
+#about h2{
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* features section styling */
+#features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#features img{
+    width: 100px;
+}
+#features p{
+    line-height: 25px;
+    font-size: 19px;
+    line-height: 30px;
+    color: #777;
+    word-spacing: 5px;
+    margin-top: 10px;
+}
+#features .feature-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+#features .feature-row .feature-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+#features p{
+    text-align: justify;
+}
+#features .f-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 25px auto 0;
+   
+    
+}
+#features .f-btn .lines{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+
+
+}
+
+
+
+#courses .container{
+    padding: 0px 50px;
+}
+#courses .square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+#courses .row-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#courses .row-course .c-left{
+    flex-basis: 50%;
+}
+#courses .row-course .c-left .btn{
+    margin-top: 15px;
+}
+#courses .row-course .c-right{
+    flex-basis: 50%;
+}
+#courses .row-course .c-right img{
+    width: 100%;
+}
+
+#contact .container{
+    padding: 0px 50px;
+    padding-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+#contact .cont-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .container .cont-left,
+#contact .container .cont-right{
+    flex-basis: 50%;
+    padding: 0px 60px;
+    padding-top: 15px;
+}
+#contact .container .cont-right img{
+    width: 100%;
+}
+#contact .container .cont-left form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#contact .container .cont-left form input{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 2px;
+    border: 2px solid #d67086;
+}
+
+#contact .container .btn-box{
+   padding-top:10px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+#contact .container .btn-box button{
+    flex-basis: 48%;
+}
+
+
+/* footer */
+
+#footer{
+    padding: 50px 50px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+.footer-right-col{
+    flex-basis: 35%;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color: #d67086;
+    margin-bottom: 20px;
+}
+.link-title small{
+    font-size: 13px;
+    color: #777;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    width: 100px;
+}
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.copyright-text,.footer-logo{
+    flex-basis: 40%;
+}
+
+
+/*---social-icons---*/
+
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+
+/* media query */
+@media only screen and (max-width:770px){
+    #header{
+        background: none;
+    }
+    #header .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    #header .container .logo{
+        width: 70px;
+        margin-top: 27px;
+    }
+    #header .header-text{
+       
+        margin-top: 75px;
+    }
+    #header .header-text h1{
+        font-size: 25px;
+       
+    }
+    #menu-pic{
+        width: 40px;
+        right: 60px;
+        
+    }
+    .btn{
+        padding: 10px 16px;
+       
+    }
+    .social-icons img{
+       
+        width: 14px;
+        margin: 15px auto;
+        
+    }
+    #about .left,#about .right{
+        flex-basis: 100%;
+    }
+    #about .right .about-text p{
+        line-height: 15px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #777;
+        word-spacing: 3px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    #about .right .about-text h1{
+      margin-top: 10px;
+    }
+    #features .feature-row .feature-col{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #about .left, 
+    #about .right{
+        flex-basis: 100%;
+    }
+   #features .f-btn .lines{
+    display: none;
+
+   }
+   #about .right .about-text h2{
+    margin-top: 20px;
+   }
+   #courses > div > div.c-left > h2{
+    text-align: center;
+    font-size: 14px;
+   }
+   #courses .row-course .c-left,
+   #courses .row-course .c-right{
+    flex-basis: 100%;
+   }
+   #courses > div > div.c-left > div{
+    display: none;
+   }
+   .btn{
+    padding: 10px 16px;
+   }
+   .social-icons img{
+    width: 14px;
+    margin: 15px auto;
+}
+.feature-col{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.course-left-col{
+    flex-basis: 100%;
+}
+.course-right-col{
+    flex-basis: 100%;
+    margin-top: 70px;
+}
+.contact-left-col,.contact-right-col{
+    flex-basis: 100%;
+}
+.contact-right-col{
+    margin-top: 50px;
+}
+.footer-left-col,.footer-right-col{
+    flex-basis: 100%;
+}
+.link-title{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+#courses .row-course .c-right img{
+    width: 100%;
+    margin-top: 50px;
+}
+#courses .row-course .c-left .btn{
+    /* margin: 0 auto; */
+}
+}
+
